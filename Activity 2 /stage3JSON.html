@@ -7,10 +7,12 @@
 <body>
 <script>
 	var myData = "";
-	var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
+	var staticUrl = 'https://raw.githubusercontent.com/tstennett/tstennett.github.io/master/Activity%202%20/data/data.json'; 
 
 	$.getJSON(staticUrl, function(data) {
-        console.log(data)
+        console.log(data.fact[31].dims.COUNTRY)
+        console.log(data.fact[31].dims.GHO)
+        console.log(data.fact[31].dims.YEAR)
     });
 </script>
 </body>
