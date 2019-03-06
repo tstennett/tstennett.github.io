@@ -65,9 +65,6 @@
     var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
     $.getJSON(staticUrl, function(data) {
         iw = window.innerWidth - 100;
-        //console.log(iw);
-        //Whenever finding hte largest or smallest value in a list always
-        //set the values to a number in the list to start. 
         countryData = data.fact[1].Value;
         loc = countryData.indexOf("[");
         val = countryData.substring(0,loc);
