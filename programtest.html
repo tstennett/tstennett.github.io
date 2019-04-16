@@ -21,7 +21,9 @@
 <script>
     var myData = "";
     var country1 = document.getElementById('country1-input').value;
-    document.getElementById('country1-input1').onchange = updateCountry1;
+    var country2 = document.getElementById('country2-input').value;
+    country1.onchange = updateCountry1;
+    country2.onchange = updateCountry1;
 
     function updateCountry1(event) {
         var userInput = event.target.value;
