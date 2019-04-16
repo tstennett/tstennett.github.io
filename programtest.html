@@ -12,7 +12,7 @@
 </style>
 <body>
     <canvas id="country-poverty-chart" width="400" height="400"></canvas>
-    <form>
+    <form id = "my-form">
         <input type = "text" id = "country1-input">
         <input type = "text" id = "country2-input">
         <input type = "submit">
@@ -20,17 +20,29 @@
 
 <script>
     var myData = "";
-    var country1 = document.getElementById('country1-input').value;
-    var country2 = document.getElementById('country2-input').value;
-    country1.onchange = updateCountry1;
-    country2.onchange = updateCountry2;
+    var myForm = document.getElementById("my-form")
+    myForm.addEventListenet("submit", updateChart, false);
+    
+    function updateChart() {
+        var country1 = document.getElementById("country1-input").value;
+        var country2 = document.getElementById("country2-input").value;
+        var country1Entries = getEntriesByCountry(country1);
+        var country2Entries = getEntriesByCountry(country2);
+        var country1Data = {
+            label:
+            country1Entries[0].dims.COUNTRY,
+            data:
+            formatDataForGraphing(country1Entries),
+        }
+        var country2Data = {
+            label:
+            country2Entries[0].dims.COUNTRY,
+            data:
+            formatDataForGraphing(country2Entries),
+        }
+        updatePovertyChart(country1Data,country2Data);
+    }
 
-    function updateCountry1(event) {
-        var userInput = event.target.value;
-    }
-    function updateCountry2(event) {
-        var userInput = event.target.value;
-    }
 
     var staticUrl = 'https://raw.githubusercontent.com/tstennett/tstennett.github.io/master/data.json';   
 
