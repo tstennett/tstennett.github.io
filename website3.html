@@ -79,6 +79,32 @@
       	0 8px 0 #121212, 
       	0 12px 30px rgba(0, 0, 0, 0.9);
   	}
+  	h6 {
+  		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size: 30px;
+ 		text-transform: uppercase;
+  		text-rendering: optimizeLegibility;
+   		color: white;
+ 		letter-spacing: .1em;
+  	  	text-shadow: 
+     	0 -1px 0 #fff, 
+      	0 1px 0 #2e2e2e, 
+      	0 2.5px 0 #2c2c2c, 
+      	0 3px 0 #2a2a2a, 
+      	0 3.5px 0 #282828, 
+      	0 4px 0 #262626, 
+      	0 4.5px 0 #242424, 
+      	0 5px 0 #222, 
+      	0 5.5px 0 #202020, 
+      	0 6px 0 #1e1e1e, 
+      	0 6.5px 0 #1c1c1c, 
+      	0 7px 0 #1a1a1a, 
+      	0 7.5px 0 #181818, 
+      	0 8px 0 #161616, 
+      	0 8px 0 #141414, 
+      	0 8px 0 #121212, 
+      	0 12px 30px rgba(0, 0, 0, 0.9);
+  	}
 	.title {
 		float:left;
 		padding-left: 70px;
@@ -109,7 +135,7 @@
 	#midbox {
 		float:left;
 		width:100%;
-		height:1450px;
+		height:1550px;
 		background-color: #A43131;
 	}
 	#referencebox {
@@ -136,13 +162,13 @@
 		float: right;
 		clear:right;
 		padding-right: 70px;
-		padding-top: 300px;
+		padding-top: 500px;
 	}
 	#photo img {
 		border-style:groove;
 		border-width:5px;
 		width: 520px;
-		height: 289px;
+		height: 346px;
 	}
 	#dropbtn {
   		background-color: #500000;
@@ -193,7 +219,7 @@
   	.button1 {
 		float:right;
   		background: url("images/bigfont.png");
-  		margin-right:120px;
+  		margin-right:90px;
   		margin-top:60px;
   		width: 75px;
   		height: 75px;
@@ -269,7 +295,6 @@
 	  backface-visibility: hidden;
 	}
 	.flip-box-front {
-	  background-color: #bbb;
 	  color: black;
 	}
 	.flip-box-back {
@@ -283,6 +308,8 @@
   	align-content: center;
   	justify-content: center;
   	float:left;
+  	margin-left: 180px;
+  	margin-top: 20px;
   	}
 
   	.flex-container > div {
@@ -327,7 +354,7 @@
 
 	<div>
 		<a id = "photo">
-			<img src="images/poverish.png">
+			<img src="images/slums.png">
 		</a>
 	</div>
 
@@ -336,36 +363,36 @@
 	<div class="flex-container">
   		<div class="flip-box">
     		<div class="flip-box-inner">
-      			<div class="flip-box-front">
-       				<img src="images/E_SDG goals_icons-individual-rgb-01.png" alt="Avatar" style="width:300px; height:300px;"/>
+      			<div class="flip-box-front" style="background-color: #EB1C2D">
+       				<h6>...</h6>
       			</div>
       			<div class="flip-box-back" style="background-color: #EB1C2D">
         			<h5>Answer</h5>
-        			<p>How can we promote sustainable economic growth in third-world countries?</p>
+        			<p>...</p>
       			</div>
     		</div>
   		</div>
 
 	  	<div class="flip-box">
 	    	<div class="flip-box-inner">
-	     		<div class="flip-box-front">
-	       			<img src="images/E_SDG goals_icons-individual-rgb-02.png" alt="Avatar" style="width:300px; height:300px;"/>
+	     		<div class="flip-box-front" style = "background-color: #d3a029">
+	       			<h6>How does the African education system lead to poverty?</h6>
 	      		</div>
 	      		<div class="flip-box-back" style="background-color: #d3a029">
 	        		<h5>Answer</h5>
-	        		<p>How can the global community provide aid to those suffering famine?</p>
+	        		<p>The youth are inable to gain higher-paying jobs due to the drastic inadequacies of the education system.</p>
 	      		</div>
 	    	</div>
   		</div>
 
   		<div class="flip-box">
     		<div class="flip-box-inner">
-      			<div class="flip-box-front">
-       				<img src="images/E_SDG goals_icons-individual-rgb-03.png" alt="Avatar" style="width:300px; height:300px;"/>
+      			<div class="flip-box-front" style = "background-color: #279B48">
+       				<h6>...</h6>
       			</div>
-      			<div class="flip-box-back" style = "background-color: #279B48;">
+      			<div class="flip-box-back" style = "background-color: #279B48">
         			<h5>Answer</h5>
-        			<p>Can we all walk to work?</p>
+        			<p>...</p>
       			</div>
     		</div>
   		</div>
@@ -400,13 +427,8 @@
 			document.getElementById("d").style.fontSize = "25px";
 			document.getElementById("e").style.fontSize = "25px";
 			document.getElementById("f").style.fontSize = "25px";
-			document.getElementById("h").style.fontSize = "25px";
-			document.getElementById("i").style.fontSize = "28px";
-			document.getElementById("j").style.fontSize = "65px";
-			document.getElementById("k").style.fontSize = "25px";
-			document.getElementById("button2")
-			document.getElementById("midbox").style.height = "2000px";
-			document.getElementById("photo").style.padding = "500px 70px 0px 0px";
+			document.getElementById("midbox").style.height = "2100px";
+			document.getElementById("photo").style.padding = "600px 70px 0px 0px";
 			$(document.getElementsByClassName("button")).toggleClass('button button1');
 			action = 2;
 		} else {
@@ -416,12 +438,8 @@
 			document.getElementById("d").style.fontSize = "18px";
 			document.getElementById("e").style.fontSize = "18px";
 			document.getElementById("f").style.fontSize = "18px";
-			document.getElementById("h").style.fontSize = "18px";
-			document.getElementById("i").style.fontSize = "25px";
-			document.getElementById("j").style.fontSize = "50px";
-			document.getElementById("k").style.fontSize = "18px";
-			document.getElementById("midbox").style.height = "1450px";
-			document.getElementById("photo").style.padding = "300px 70px 0px 0px";
+			document.getElementById("midbox").style.height = "1550px";
+			document.getElementById("photo").style.padding = "500px 70px 0px 0px";
 			$(document.getElementsByClassName("button1")).toggleClass('button button1');
 			action = 1;
 		}
