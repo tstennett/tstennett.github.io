@@ -2,7 +2,7 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Sample</title>
 </head>
 <style>
@@ -11,7 +11,7 @@
 
 </style>
 <body>
-    <canvas id="country-poverty-chart" width="400" height="400"></canvas>
+    <div><canvas id="country-poverty-chart" width="400px" height="400px"></canvas></div>
     <form id = "my-form">
         <input type = "text" id = "country1-input">
         <input type = "text" id = "country2-input">
@@ -21,7 +21,9 @@
 <script>
     var myData = "";
     var myForm = document.getElementById("my-form")
-    myForm.addEventListenet("submit", updateChart, false);
+    var staticUrl = 'https://raw.githubusercontent.com/tstennett/tstennett.github.io/master/data.json';
+
+    myForm.addEventListener("submit", updateChart, false);
     
     function updateChart() {
         var country1 = document.getElementById("country1-input").value;
@@ -41,10 +43,7 @@
             formatDataForGraphing(country2Entries),
         }
         updatePovertyChart(country1Data,country2Data);
-    }
-
-
-    var staticUrl = 'https://raw.githubusercontent.com/tstennett/tstennett.github.io/master/data.json';   
+    }   
 
     $.getJSON(staticUrl, getJsonCallback);
     var countryEntries = [];
@@ -55,7 +54,7 @@
 
     function getEntriesByCountry(country) {
         return countryEntries.filter(function (countryEntry) {
-            return countryEntry.COUNTRY.toLowerCase().indexOf(countryEntry.toLowerCase()) > -1;
+            return countryEntry.dims.COUNTRY === country;
         });
     }
 
@@ -69,22 +68,26 @@
     }
 
     var ctx = document.getElementById('country-poverty-chart');
-    var lineChart = new Chart(ctx, {
-        type: 'line'
-        data: {
-            datasets: [],
-        },
-    });    
 
-    function updatePovertyChart(countryData1, countryData2) {
+        var lineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [],
+            },
+            options: {
+                responsive: false
+            }
+        }); 
+
+    function updatePovertyChart(country1Data, country2Data) {
         lineChart.data.datasets = [
             {
-                label: countryData1.label,
-                data: countryData1.data,
+                label: country1Data.label,
+                data: country1Data.data,
             },
             {
-                label: countryData2.label,
-                data: countryData2.data,
+                label: country2Data.label,
+                data: country2Data.data,
             },
         ];
         lineChart.update()
