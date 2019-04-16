@@ -14,10 +14,13 @@
     <canvas id="country-poverty-chart" width="400" height="400"></canvas>
     <form>
         <input type = "text" id = "country1-input">
+        <input type = "text" id = "country2-input">
+        <input type = "submit">
     </form>
 
 <script>
     var myData = "";
+    var country1 = document.getElementById('country1-input').value;
     document.getElementById('country1-input1').onchange = updateCountry1;
 
     function updateCountry1(event) {
