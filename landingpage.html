@@ -1,7 +1,6 @@
 </!DOCTYPE html>
 <html>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title></title>
 
 <style>
@@ -10,29 +9,29 @@ body {
 	}
 	h1 {
 		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-		font-size: 70px;
+		font-size: 40px;
  		text-transform: uppercase;
   		text-rendering: optimizeLegibility;
    		color: white;
  		letter-spacing: .1em;
   	  text-shadow: 
       0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 2.5px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
-      0 3.5px 0 #282828, 
-      0 4px 0 #262626, 
-      0 4.5px 0 #242424, 
-      0 5px 0 #222, 
-      0 5.5px 0 #202020, 
-      0 6px 0 #1e1e1e, 
-      0 6.5px 0 #1c1c1c, 
-      0 7px 0 #1a1a1a, 
-      0 7.5px 0 #181818, 
-      0 8px 0 #161616, 
-      0 8.5px 0 #141414, 
-      0 9px 0 #121212, 
-      0 15px 30px rgba(0, 0, 0, 0.9);
+      0 0.7px 0 #2e2e2e, 
+      0 0.9px 0 #2c2c2c, 
+      0 1.1px 0 #2a2a2a, 
+      0 1.9px 0 #282828, 
+      0 2.2px 0 #262626, 
+      0 2.5px 0 #242424, 
+      0 2.9px 0 #222, 
+      0 4.1px 0 #202020, 
+      0 4.4px 0 #1e1e1e, 
+      0 4.7px 0 #1c1c1c, 
+      0 4px 0 #1a1a1a, 
+      0 5px 0 #181818, 
+      0 5px 0 #161616, 
+      0 5px 0 #141414, 
+      0 5px 0 #121212, 
+      0 10px 30px rgba(0, 0, 0, 0.9);
   	}
 	}
 	h2 {
@@ -42,24 +41,36 @@ body {
 		font-size: 18px;
 		text-indent: 50px;
 	}
-	.title {
+	#title {
 		float:left;
-		padding-left: 20px;
-		padding-top: 10px;
+		padding-left: 100px;
+		padding-top: 20px;
 		clear: left;
+		word-wrap: break-word;
+		width: 700px;
+		text-align: center;
 	}
- 	.logo {
+ 	#logo1 {
  		float:left;
  		padding-left: 100px;
  		padding-top: 25px;
- 	 }
-	.logo img {
+ 	}
+ 	#logo2 {
+ 		float:left;
+ 		padding-left: 100px;
+ 		padding-top: 25px;
+ 	}
+	#logo1 img {
+		height:150px;
+		width:150px;
+	}
+	#logo2 img {
 		height:150px;
 		width:150px;
 	}
 	.titlebox {
 		width:98.7%;
-		height:200px;
+		height:190px;
 		background-color: #FFB1A9;
 		position: fixed;
 		border-style: groove;
@@ -68,7 +79,7 @@ body {
 	.midbox {
 		width:100%;
 		height:1000px;
-		background-color: blue;
+		background-color: #AD453A;
 	}
 </style>
 
@@ -77,12 +88,16 @@ body {
 
 <div class = "titlebox">
 
-	<div class = "title">
-		<h1>Poverty in Africa</h1>
+	<div id = "title">
+		<h1>The Cycle of Poverty and Poor Education in Africa</h1>
 	</div>
 
-	<a class = "logo">
+	<a id = "logo1">
 		<img src="images/poverty.png">
+	</a>
+
+	<a id = "logo2">
+		<img src="images/education.png">
 	</a>
 
 </div>

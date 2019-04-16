@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima Nova">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<title>No Poverty</title>
+	<title>Comparison</title>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <style>
@@ -12,7 +12,7 @@
 	}
 	h1 {
 		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-		font-size: 70px;
+		font-size: 69px;
  		text-transform: uppercase;
   		text-rendering: optimizeLegibility;
    		color: white;
@@ -53,11 +53,40 @@
 		font-size: 25px;
 		color: white;
 	}
+	h5 {
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size: 40px;
+ 		text-transform: uppercase;
+  		text-rendering: optimizeLegibility;
+   		color: white;
+ 		letter-spacing: .1em;
+  	  	text-shadow: 
+     	0 -1px 0 #fff, 
+      	0 1px 0 #2e2e2e, 
+      	0 2.5px 0 #2c2c2c, 
+      	0 3px 0 #2a2a2a, 
+      	0 3.5px 0 #282828, 
+      	0 4px 0 #262626, 
+      	0 4.5px 0 #242424, 
+      	0 5px 0 #222, 
+      	0 5.5px 0 #202020, 
+      	0 6px 0 #1e1e1e, 
+      	0 6.5px 0 #1c1c1c, 
+      	0 7px 0 #1a1a1a, 
+      	0 7.5px 0 #181818, 
+      	0 8px 0 #161616, 
+      	0 8px 0 #141414, 
+      	0 8px 0 #121212, 
+      	0 12px 30px rgba(0, 0, 0, 0.9);
+  	}
 	.title {
 		float:left;
 		padding-left: 70px;
 		clear: left;
+		width: 600px;
+		text-align:center;
 		padding-top:10px;
+		word-wrap:break-word;
 	}
  	.logo {
  		float:left;
@@ -71,7 +100,7 @@
 	.titlebox {
 		width:98.7%;
 		height:190px;
-		background-color: #FFB1A9;
+		background-color: #F89C9C;
 		position: fixed;
 		border-style: groove;
 		border-width: 10px;
@@ -80,8 +109,8 @@
 	#midbox {
 		float:left;
 		width:100%;
-		height:1550px;
-		background-color: #AD453A;
+		height:1450px;
+		background-color: #A43131;
 	}
 	#referencebox {
 		float: left;
@@ -107,7 +136,7 @@
 		float: right;
 		clear:right;
 		padding-right: 70px;
-		padding-top: 350px;
+		padding-top: 300px;
 	}
 	#photo img {
 		border-style:groove;
@@ -116,7 +145,7 @@
 		height: 289px;
 	}
 	#dropbtn {
-  		background-color: #5B0A01;
+  		background-color: #500000;
   		color: white;
   		padding: 16px;
   		font-size: 25px;
@@ -125,13 +154,13 @@
   		
 	}
 	#dropbtn:hover, #dropbtn:focus {
- 		background-color: #862218;
+ 		background-color: #630F02;
 	}
 	#dropdown {
   		display: inline-block;
   		float:left;
   		clear:left;
-  		margin-left: 350px;
+  		margin-left: 310px;
   		margin-top: 10px;
 	}
 	.dropdown-content {
@@ -155,7 +184,7 @@
 	.button {
   		float:right;
   		background: url("images/smallfont.png");
-  		margin-right:120px;
+  		margin-right:90px;
   		margin-top:60px;
   		width: 75px;
   		height: 75px;
@@ -171,7 +200,7 @@
   		border-radius:2px;
   	}
   	#button2 {
-		background-color: #862218;
+		background-color: #500000;
 		border: none;
 		color: white;
 	  	padding: 15px 32px;
@@ -180,14 +209,14 @@
 	  	font-size: 20px;
 	  	cursor: pointer;
 	  	margin-top: 50px;
-	  	margin-left: 300px;
+	  	margin-left: 330px;
 	}
 	.button3:hover {
   		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   		background-color: #862218;
  	}
  	#button4 {
- 		background-color: #862218;
+ 		background-color: #500000;
 		border: none;
 		color: white;
 	  	padding: 15px 32px;
@@ -198,7 +227,7 @@
  	}
 
  	#button5 {
- 		background-color: #862218;
+ 		background-color: #500000;
 		border: none;
 		color: white;
 	  	padding: 15px 32px;
@@ -214,19 +243,54 @@
   		margin-left: 365px;
   		margin-top: 50px;
   	}
-	#a{}, #b{}, #c{}, #d{}, #e{}, #f{}, #g{}, #h{}, #i{}, #j{}
+	#a{}, #b{}, #c{}, #d{}, #e{}, #f{}, #h{}, #i{}, #j{}
 
-	#piechart_3d {
-		width: 520px;
-		height: 300px;
-		float:right;
-		border-style:groove;
-		border-width:5px;
-		margin-right: 70px;
-		margin-top: 150px;
-
+	.flip-box {
+	  background-color: transparent;
+	  width: 300px;
+	  height: 300px;
+	  perspective: 1000px;
+	}
+	.flip-box-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+	.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+	.flip-box-front, .flip-box-back {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	}
+	.flip-box-front {
+	  background-color: #bbb;
+	  color: black;
+	}
+	.flip-box-back {
+	  color: white;
+	  transform: rotateY(180deg);
 	}
 
+  	.flex-container {
+  	display: flex;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	justify-content: center;
+  	float:left;
+  	}
+
+  	.flex-container > div {
+  	background-color: #f1f1f1;
+  	margin: 20px;
+  	padding: 10px;
+  	font-size: 20px;
+  	}
 
 </style>
 </head>
@@ -235,8 +299,12 @@
 <div class = "titlebox">
 
 	<div class = "title">
-		<h1>Poverty in Africa</h1>
+		<h1>Comparison</h1>
 	</div>
+
+	<a class = "logo">
+		<img src="images/education.png">
+	</a>
 
 	<a class = "logo">
 		<img src="images/poverty.png">
@@ -250,13 +318,11 @@
 
 	<div id="content1">
 		<h2 id = "a">Introduction</h2>
-		<h3 id = "b">When comparing Africa to the rest of the world, it is evident that there has been great financial instability within the continent which still runs rampant to this day. With a poverty rate of around 41% in the Sub-Saharan parts of Africa, the continent stands atop of the poverty rate statistics.</h3>
-		<h2 id = "c">Causes and Effects</h2>
-		<h3 id = "d">Firstly, as much as an effect as a cause, Africa's population growth is drastically uncontrolled. In 2014, Africa had a natural growth rate of 2.5%, which is almost double the natural growth rate of the continent behind it. With the rapid growth of the continent, the infrastructure and economic growth is incapable of keeping up, hence the detrimental poverty.</h3>
-		<h3 id = "e">Secondly, African infrastructure and healthcare is poor, often resulting in the inability for one to perform their job properly. Africa heavily utilizes the agriculture industry, so when the road conditions are poor, people are unable to go to work. Additionally, when the healthcare system is bad, farmers get illnesses that are often left untreated, resulting in the inability to work.</h3>
-		<h3 id = "f">Thirdly, Africa is unfortunately a victim of frequent climate anomalies. For example, devastating droughts ruin the agriculture industries as crops are unable to get sufficient irrigation. This leads to the irreparable damage on the agriculture industry.</h3>
-		<h3 id = "g">Finally, Africa has a low literacy rate, which can be due in part to the poor education system. This will prevent the African population from getting better-paying jobs, leading to further economic depression.</h3>
-		<h3 id = "h">Overall, these factors indicate the severity of the poverty issue within Africa. Many people consequently have to live with less food and no shelter, which is evidently a horrid lifestyle. Luckily, there are various charities that help the people of Africa recover from poverty, and they are mentioned below.</h3>
+		<h3 id = "b">Africa's horrible poverty rate and inadequate schooling system have an undeniable link which results in a cycle of poverty. This cycle is a primary factor in Africa's economic struggle as younger generations are inable to receive proper education which is required of higher-paying professions.</h3>
+		<h2 id = "c">Expansion</h2>
+		<h3 id = "d">As evident in the previous page, the African education system is terrible. The students are taught poorly, particularly in mathematics which is proven to be a deciding factor in middle-class acceptance. Additionally, the teachers treat their duties unprofessionally, resulting in less lectures for students. Overall, these factors result in the inability to receive higher-paying jobs, resulting in the youth entering or remaining in poverty for the remained of their adult life.</h3>
+		<h3 id = "e">Secondly, as mentioned earlier, Africa is heavily dependant on physical labour. Despite frequent warnings, African parents already living in poverty have children to aid with the physical labour, providing more economic output. This is a short-term solution, as the children are incapable of having time to go to school, and are stuck with the same low-paying and unpredictable income for the rest of their live.</h3>
+		<h3 id = "f">Therefore, Africa carries a burdensome poverty cycle which consists of the youth either being inable to attend school, or receiving horrid education, resulting in low-paying and unpredictable jobs for their adulthood. In their adulthood, due to the physical labour industries such as agriculture, those people may also have many kids who will share the same fate, resulting in the cycle repeating itself to more.</h3>
 	</div>
 
 	<div>
@@ -267,58 +333,43 @@
 
 	<div id="piechart_3d"></div>
 
-	<div id = "moveon">
-		<h4 id = "i">To move on to the next page, please select the correct answer:</h4>
-	</div>
+	<div class="flex-container">
+  		<div class="flip-box">
+    		<div class="flip-box-inner">
+      			<div class="flip-box-front">
+       				<img src="images/E_SDG goals_icons-individual-rgb-01.png" alt="Avatar" style="width:300px; height:300px;"/>
+      			</div>
+      			<div class="flip-box-back" style="background-color: #EB1C2D">
+        			<h5>Answer</h5>
+        			<p>How can we promote sustainable economic growth in third-world countries?</p>
+      			</div>
+    		</div>
+  		</div>
 
-	<div id="dropdown">
-  		<button onclick="myFunction()" id="dropbtn">What are the four listed causes and effects of poverty in Africa?</button>
-  		<div id="myDropdown" class="dropdown-content">
-    		<a href="website2.html">Growth Rate, Poor Infrastructure and Healthcare, Climate Change, and Lack of Education</a>
-    		<a href="website1.html">Growth Rate, Drug Addiction, Climate Change, and Literacy Rate</a>
-    		<a href="website1.html">Emigration Rate, Prohibition, Thieves, and Stock Market Crash</a>
+	  	<div class="flip-box">
+	    	<div class="flip-box-inner">
+	     		<div class="flip-box-front">
+	       			<img src="images/E_SDG goals_icons-individual-rgb-02.png" alt="Avatar" style="width:300px; height:300px;"/>
+	      		</div>
+	      		<div class="flip-box-back" style="background-color: #d3a029">
+	        		<h5>Answer</h5>
+	        		<p>How can the global community provide aid to those suffering famine?</p>
+	      		</div>
+	    	</div>
+  		</div>
+
+  		<div class="flip-box">
+    		<div class="flip-box-inner">
+      			<div class="flip-box-front">
+       				<img src="images/E_SDG goals_icons-individual-rgb-03.png" alt="Avatar" style="width:300px; height:300px;"/>
+      			</div>
+      			<div class="flip-box-back" style = "background-color: #279B48;">
+        			<h5>Answer</h5>
+        			<p>Can we all walk to work?</p>
+      			</div>
+    		</div>
   		</div>
 	</div>
-
-</div>
-
-<div id = "referencebox">
-	<div id = "content2">
-		<h2 id = "j">
-			Donate to Help!
-		</h2>
-		<h3 id = "k">
-			These following charities help the people of Africa who live in unbearable poverty daily. By donating and supporting these charities, you will be able to help change the miserable lives destined for the youth and elderly. 
-		</h3>
-
-		<a href="https://www.aidforafrica.org/about-us" target="_blank"><button id = "button2" class="button3">Aid for Africa</button></a>
-
-		<a href="https://www.canadahelps.org/en/charities/poverty-relief-africa/" target="_blank"><button id = "button4" class="button3">Poverty Relief Africa</button></a>
-
-		<a href="https://africabridge.org/" target="_blank"><button id = "button5" class="button3">Africa Bridge</button></a>
-
-	</div>
-</div>
-
-	<script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Location', 'Amount of People in Extreme Poverty (Millions)'],
-          ['Sub-Saharan Africa', 413],
-          ['Rest of the World',  887]
-        ]);
-
-        var options = {
-          title: 'Visual Representation of the Distribution of Extreme Poverty Globally (Millions)',
-          is3D: true,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
 
 <script>
 	var action = 1;
@@ -349,17 +400,13 @@
 			document.getElementById("d").style.fontSize = "25px";
 			document.getElementById("e").style.fontSize = "25px";
 			document.getElementById("f").style.fontSize = "25px";
-			document.getElementById("g").style.fontSize = "25px";
 			document.getElementById("h").style.fontSize = "25px";
 			document.getElementById("i").style.fontSize = "28px";
 			document.getElementById("j").style.fontSize = "65px";
 			document.getElementById("k").style.fontSize = "25px";
 			document.getElementById("button2")
-			document.getElementById("midbox").style.height = "2200px";
-			document.getElementById("referencebox").style.height = "550px";
-			document.getElementById("photo").style.padding = "800px 70px 0px 0px";
-			document.getElementById("dropbtn").style.fontSize = "35px";
-			document.getElementById("dropdown").style.margin ="10px 0px 0px 260px"
+			document.getElementById("midbox").style.height = "2000px";
+			document.getElementById("photo").style.padding = "500px 70px 0px 0px";
 			$(document.getElementsByClassName("button")).toggleClass('button button1');
 			action = 2;
 		} else {
@@ -369,16 +416,12 @@
 			document.getElementById("d").style.fontSize = "18px";
 			document.getElementById("e").style.fontSize = "18px";
 			document.getElementById("f").style.fontSize = "18px";
-			document.getElementById("g").style.fontSize = "18px";
 			document.getElementById("h").style.fontSize = "18px";
 			document.getElementById("i").style.fontSize = "25px";
 			document.getElementById("j").style.fontSize = "50px";
 			document.getElementById("k").style.fontSize = "18px";
-			document.getElementById("midbox").style.height = "1550px";
-			document.getElementById("referencebox").style.height = "450px";
-			document.getElementById("photo").style.padding = "500px 70px 0px 0px";
-			document.getElementById("dropbtn").style.fontSize = "25px";
-			document.getElementById("dropdown").style.margin ="10px 0px 0px 350px"
+			document.getElementById("midbox").style.height = "1450px";
+			document.getElementById("photo").style.padding = "300px 70px 0px 0px";
 			$(document.getElementsByClassName("button1")).toggleClass('button button1');
 			action = 1;
 		}
