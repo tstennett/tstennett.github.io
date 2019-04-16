@@ -13,12 +13,17 @@
 <body>
     <canvas id="country-poverty-chart" width="400" height="400"></canvas>
     <form>
-        <input type = "text">
+        <input type = "text" id = "country1-input">
     </form>
-    
-    // TS how do I uhh make an Input box that will send data to the script for use, and thanks for the help! :D
+
 <script>
     var myData = "";
+    document.getElementById('country1-input1').onchange = updateCountry1;
+
+    function updateCountry1(event) {
+        var userInput = event.target.value;
+    }
+
     var staticUrl = 'https://raw.githubusercontent.com/tstennett/tstennett.github.io/master/data.json';   
 
     $.getJSON(staticUrl, getJsonCallback);
